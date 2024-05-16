@@ -256,3 +256,4 @@
 /Users/jamiepaterson/Documents/full-stack-assessment/backend/bin/Debug/net8.0/Npgsql.dll
 /Users/jamiepaterson/Documents/full-stack-assessment/backend/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/jamiepaterson/Documents/full-stack-assessment/backend/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+/Users/jamiepaterson/Documents/full-stack-assessment/backend/obj/Debug/net8.0/backend.sourcelink.json
