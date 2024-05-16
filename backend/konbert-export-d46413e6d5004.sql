@@ -1,4 +1,4 @@
-CREATE TABLE "games" (
+CREATE TABLE "gamess" (
   "game_title" text,
   "genre" text,
   "platform" text,
@@ -7,10 +7,11 @@ CREATE TABLE "games" (
   "price" double precision,
   "image_url" text,
   "description" text,
-  "studio_name" text
+  "studio_name" text,
+  "id" serial primary key
 );
 
-INSERT INTO "games" ("game_title","genre","platform","release_date","rating","price","image_url","description","studio_name")
+INSERT INTO "gamess" ("game_title","genre","platform","release_date","rating","price","image_url","description","studio_name")
 VALUES
 ('Fix San','simulation','PlayStation','6/27/2001',1.8,32.03,'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJYSURBVDjLY/j//z8DJRhMmJQd+x89/W4IRQbY1x5L8590dzmy5PuIqC4gfvA+PPIyEMfhNqD06H+L9gfG9p33/jr23OMEiX30DTj8yT/oFxCf+hAYfBeIfwPxIyBWwjSg5Mh/tYZHzDr1D34aND7Y9tXOsf2Lg/O/z85uNjCFn908lT56eH985xXwzXvygwYUA4yLD/9Xcm+QlS572JWesP7XVyOL79/MLKci22Rc/6DXvPH+X8um+79t2u7/tOu4/w9ugFHxof8wha+1LP89NHT9iaxZIf/BCpWie7/Vi+/N/25kqvrN2Oz/suiO6QgDig6ADfgtJrX0p6TMb1u/Xd+5Eh9M4k16yCyQdH+HYOK9H6JJd+tgBv7U0j3wXVvvA9wAg8J9/6sNAvT/8gr++8Mn1MYQ8aCFIfzBf6bwB3+Zwx/8Ywu7H44e+j8VVX4hDMjf+/8/I6v/fya2OyghHHCn3GuRw3TvJTZnPJdYnXVbbA436Le49Aa4Afp5u///ZGAJ+c3AIg5T4DXT0stjpuULj1nmD9xmW6x1nWu2z2W+6RenBcbxIHmga6XgBujl7vw/R1TDAabZscNommOn0UeHLsNFDj2GPDBxh37DDrtJ+u8x0oFu9vb/liU6khal2jPNS3UfAem3FmU6Gej+tqjX5rBo0rln1qI9GdWArG3/jTI0/Q0z1N3UAyxdgTQ4NQpreMjCFAqpOoHZRvnqUhpROhmmxRo8cAO0M7f8187Y/F8rYxMQb/yvlbYBiNf/1wTh1HX/NUA4ZS0Ur/mvkbwajOEGUIIBf5BxjDvwFIUAAAAASUVORK5CYII=','Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.','Bubbletube'),
 ('Fixflex','sports','Nintendo Switch','4/11/2017',5.2,51.79,'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJYSURBVDjLlZNdSFNhGMcH3nrl3ZAgyr4YoiPTNXJ30UVBUOTGXGVin6OLLrqQ6KIwJrm2KBUjE5xRaEnNpuZxpLCLpG7KHbfpprPmPt3a99r3v/cchxi5Wi/8eDnvOf/f85z3nJcDgLMd/pnGsnX9EdpHCQ2e94fLij3HKXaDhHvC9D2Evt6Fe7zh6n8JSLjCSwkjuXQY6eACXGOHAmtvDlaULPBOCXURSzfy2SjyaTdCRjUcr/m9JQlIuNYzKcghl0LK2430+gCR+PFtuCa7+qK69p8CEqZj9mGSD8A0JGLJxmmEzRqsDPEMfxV4JgTSwNwNIJ9CzHYOCxoRS2xRhnwmAOf0FVj790q3FZBwuUtX7//pm0Mu7UJs6SwWBhtZImYxstGPiDlmsfikas3Su6v8D4HrXf1IaF5JKvmQdHUTgQzL2mMFQRPiVhlyyRW4Z2+DVu1Q/CYg4Sqnti6Tz0SRiRiQsMlYQcLehvXPYkRMZ6CbbMLNvmZcUp3E+Q4RpO081abA+bbuU9j8jGycG0lnFxJWKRE0b77C6Ngp3Hl1ATq6B19cFNTT1yBWV6NBzlUy4eOemVbyzWPkpxlHfEnCErWQymYJqS5B6/2j0BofQmt6BGYo9Reh1l+GQM5NcRyjfEfc8YEV5DNBwo8NssENyNqJW3xM0P3YOsbme5gOwPk+UqNZfVkN+3MelgcPwDawD0tP92CxbzdMj3fCqKyE6HoluqhWKKgWNqyYamE7EMq52aKHaSukUsdp5X48oNrYyszMXLN7UIqgIOkkRJi2C3Mns/4Lp3nrFHdnUnEAAAAASUVORK5CYII=','Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.','Twitterbridge'),
