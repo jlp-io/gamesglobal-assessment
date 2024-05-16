@@ -13,8 +13,10 @@ Running the postgres database
 Getting started with the Backend 
 1) Open terminal
 2) cd backend
-3) dotnet run --launch-profile https
-4) Check if the backend is live by loading the URL https://localhost:7126/swagger/index.html in your browser
+3) dotnet ef migrations add InitialCreate —-context AppDbContext
+4) dotnet ef database update —-context AppDbContext
+5)  dotnet run --launch-profile https
+6) Check if the backend is live by loading the URL https://localhost:7126/swagger/index.html in your browser
 
 Getting started with the Frontend
 1) Open new terminal window
