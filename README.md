@@ -11,12 +11,14 @@ Running the postgres database
 6) If the data output is successful, then your database will be loaded with the relevant data.
 
 Getting started with the Backend 
+1) Install the .NET SDK if you haven't already at https://dotnet.microsoft.com/en-us/download/dotnet/8.0. You can check if .NET is already installed via the dotnet --info command.
 1) Open terminal
 2) cd backend
 3) dotnet ef migrations add InitialCreate —-context AppDbContext
 4) dotnet ef database update —-context AppDbContext
-5) dotnet run --launch-profile https
-6) Check if the backend is live by loading the URL https://localhost:7126/swagger/index.html in your browser
+5) dotnet restore
+6) dotnet run --launch-profile https
+7) Check if the backend is live by loading the URL https://localhost:7126/swagger/index.html in your browser
 
 Getting started with the Frontend
 1) Open new terminal window
