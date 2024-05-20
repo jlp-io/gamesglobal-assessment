@@ -12,8 +12,8 @@ Running the postgres database
 
 Getting started with the Backend 
 1) Install the .NET SDK if you haven't already at https://dotnet.microsoft.com/en-us/download/dotnet/8.0. You can check if .NET is already installed via the dotnet --info command.
-2) dotnet tool install --global dotnet-ef
-3) Open terminal
+2) Open terminal
+3) dotnet tool install --global dotnet-ef
 4) cd backend
 5) dotnet ef migrations add InitialCreate —-context AppDbContext
 6) dotnet ef database update —-context AppDbContext
@@ -26,3 +26,9 @@ Getting started with the Frontend
 2) cd into frontend
 3) npm install
 4) npm start
+
+Testing the CRUD endpoints with Swagger
+  Swagger can be accessed at the following URL: https://localhost:7126/swagger/
+  You should start your endpoint testing with the POST endpoint, and post the sample object provided. Afterwards, you get use PUT to modify the new objects contents, and the DELETE endpoint to delete it from the list. 
+  During intervening endpoint requests, you can check the success/failure of the requests by using the GET endpoint to check the status of your object (check if its been added/modified/deleted). 
+  
